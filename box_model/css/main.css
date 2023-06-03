@@ -1,0 +1,43 @@
+#main{
+    background-color: coral;
+    padding: 50px;
+    margin: 20p;
+}
+
+#content {
+    border: 15px solid darkorange;
+    background-color: orangered;
+    color: yellow;
+    margin: 25px 0;
+    padding: 25px 45px 25px 15px;
+}
+
+#content div{
+    margin-bottom: 12px;
+}
+
+#content #quote {
+    margin: 20px 0 20px 40px;
+}
+
+#content #quote div {
+    margin-bottom: 5px;
+}
+
+#content #quote_citation {
+    margin-left: 25px;
+}
+
+#top_heading{
+    color: white;
+    margin: 25px ;
+}
+
+#intro{
+    color: white;
+    }
+
+#footer {
+    color: white;
+}
+    
