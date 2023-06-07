@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header,footer {
+    background-color: lightskyblue;
+}
+
+header h1 {
+    padding: 60px;
+    text-align: center;
+    font-family: 'Roboto'
+    sans-serif;
+    font-weight: 700;
+}
+.contain{
+    width: 85vw;
+    margin: 0 auto;
+}
+header nav {
+    padding: 0 50px 25px 50px;
+    border-bottom: 1px solid  black;
+}
+
+header nav a {
+    margin-right:15px;
+    transition: color 0.10s ease-in-out ;
+}
+
+header nav a:hover {
+    color:red;
+}
+
+main {
+    background-color: lightcyan;
+    padding: 25px 50px;
+}
+
+main h2 {
+    color:blueviolet;
+    margin-bottom: 25px;
+}
+section.card {
+    background-color: white;
+    padding: 50px 40px;
+    border: 2px solid #add8e6;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 2px rgba(0,
+    0,0,0.3);
+}
+
+section.card h3 {
+    color:blue;
+    letter-spacing: 1.5px;
+}
+
+section.card hr {
+    border: none;
+    border-bottom: 2px solid blue;
+    margin: 20px auto;
+}
+
+section.card p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+section.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+section.card #image_container {
+    width: 300px;
+    float: left;
+    padding: 0 25px;
+}
+
+main section.card:last-of-type p {
+    margin-bottom: 25x;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    padding: 50px;
+    text-align: center;
+    color: navy;
+    border-top: 2px solid black;
+}
+
+footer p:first-of-type {
+    margin-bottom: 10px;
+}
