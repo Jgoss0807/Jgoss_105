@@ -1,0 +1,38 @@
+div {
+    padding: 100;
+    font-size: 36px;
+    text-align: center;
+}
+#desktop {
+    background-color: aquamarine;
+}
+#tablet {
+    background-color: brown;
+}
+#mobile {
+    background-color: goldenrod;
+}
+
+/* Desktop Breakpoints */
+@media screen and (min width: 1280px) and (min-width:
+768px) {
+    #tablet, #mobile {
+        display: none;
+    }
+}
+
+/* Tablet Breakpoint */
+@media screen and 
+(max-width: 1279px) and
+(min-width: 768px) {
+    #desktop, #mobile {
+        display: none;
+    }
+
+/* Mobile breakpoint*/
+@media screen and (max-width: 767px) {
+    #desktop, #tablet {
+        display: none;
+    }
+}
+}
