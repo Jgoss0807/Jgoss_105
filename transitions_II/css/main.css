@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+}
+
+#text_with_transition {
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+#text_with_transition:hover {
+    color: blueviolet;
+}
+
+#box {
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    background-color: violet;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    /*
+
+    This is an example of using the transition shorthand property
+
+   */
+    transition:
+    background-color 2s,
+    border-radius 2s;
+}
+#box:hover {
+    background-color: aqua;
+    border-radius 50%;
+}
+
+img {
+    width: 200px;
+    transition: transform 1s;
+}
+img:hover {
+    transform: scale(3) rotate(369deg);
+}
