@@ -1,48 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 200px;
 }
 
-h2{
-    font-family: 'DynaPuff', cursive;
-    font-weight: 500;
+
+header {
+    background-color: darksalmon;
+    padding: 25px;
+    border-bottom: 5px double coral;
 }
 
-header,footer {
-    background-color: lightsalmon;
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+nav a, nav a:visited {
+    color: black;
+    text-decoration: none;
+    transition: all 1s;
+}
+nav a :hover {
+    color: teal;
+    text-decoration: underline;
 }
 
-header h1 {
-    padding: 60px;
+main {
+    background-color: peachpuff;
+
+}
+
+h1 , hr {
+    color: teal;
     text-align: center;
-    font-family: 'DynaPuff'
-    cursive;
-    font-weight: 500;
-}
-
-contain{
-    width: 85vw;
+    width: 500px;
     margin: 0 auto;
+    font-size: 50px;
 }
-
-main h2 {
-    color:skyblue;
-    margin-bottom: 25px;
-}
-
-section.card p {
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.clear {
-    clear: both;
-}
-
-section.card #image_container {
-    width: 300px;
-    float: left;
-    padding: 0 25px;
+#first-line {
+    border: none;
+    border-bottom: 5pxdouble teal;
+    width:
+    margin
 }
