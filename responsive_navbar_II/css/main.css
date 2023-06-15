@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@500&family=Palette+Mosaic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: orangered;
+    padding: 24px;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+ul li {
+    margin: 12px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-family:font-family: 'Bebas Neue', sans-serif;
+}
+
+#home {
+    margin-right: auto;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.shopping {
+    background-color: red;
+    position: absolute;
+    flex-flow: column wrap;
+    left: 0;
+    top: 75%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+    opacity 0.5s,
+    visibility 0.5s,
+    top 0.5s;
+}
+.dropdown-container:hover .shopping {
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    #home {
+        margin-right: 0;
+    }
+}
+
+main h1,main h2{
+    text-align: center;
+}
+
+img {
+    width: 200px;
+}
+
+
+
+
