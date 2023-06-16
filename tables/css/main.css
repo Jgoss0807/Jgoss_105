@@ -1,16 +1,20 @@
 #table, #table th, #table td {
-    border: 1px solid black;
     border-collapse: collapse;
     padding: 12px;
+    width: 450px;
     text-align: left;
 }
 
 #colespan {
-    background-color: #008e70;
+    background-color: white;
+    margin-bottom: 48px;
 }
 
 th {
     color: white;
+    background-color: #008e70;
+    font-family: sans-serif;
+    font-weight: 400;
 
 }
 #table {
@@ -18,13 +22,22 @@ th {
 }
 
 td {
-    background-color: black;
-    color: white;
+    background-color: #f2f1f2;
+    color: black;
+    font-family: sans-serif;
 }
 #tablerow2 td {
     background-color: #f2f1f2;
     color: #008e70;
-    border-top: 2px solid #f2f2f2;
-    border-bottom: 2px solid #f2f1f2;
+    border-top: 2px solid lightslategray;
+    border-bottom: 2px solid lightslategray;
+}
+
+table thead tr th:first-child {
+    border-radius: 0 4px 0 0;
+}
+
+table thead tr th:last-child {
+    border-radius: 0 4px  0 0;
 }
 
