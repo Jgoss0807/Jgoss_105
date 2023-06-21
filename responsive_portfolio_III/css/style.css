@@ -272,6 +272,16 @@ footer ul {
     width: 100%;
     margin-bottom: 24px;
 }
+
+#gallery_6 {
+    columns: 3 auto;
+    column-gap: 24px;
+}
+
+#gallery_6 img {
+    width: 100%;
+    margin-bottom: 24px;
+}
 /****************************************************************************
   Media Query - Mobile Breakpoint
 ****************************************************************************/
@@ -315,6 +325,10 @@ footer ul {
 }
 
 #gallery_5 {
-    colums: 2 auto;
+    columns: 2 auto;
 }
+}
+
+#gallery_6 {
+    columns: 2 auto;
 }
