@@ -41,7 +41,7 @@ a {
 nav,
 nav a,
 footer a {
-    color: #76BE5E;
+    color: #76BE5E;;
 }
 
 nav a:hover,
@@ -65,9 +65,7 @@ footer a:hover {
     ". two_cards_area ."
     "footer_area footer_area footer_area";
 }
-section {
-    border: 4px solid #76BE5E;
-}
+
 nav {
     grid-area: nav_area;
 }
@@ -131,7 +129,7 @@ nav .social_media {
 nav,
 nav a,
 footer a {
-    color: #76BE5E;
+    color: darkgreen;
 }
 
 nav a:hover,
@@ -172,8 +170,8 @@ footer ul {
 #hero a,
 .card a {
     background-color: white;
-    color: indigo;
-    border: 2px solid indigo;
+    color: green;
+    border: 2px solid black;
     border-radius: 24px;
     display: inline-block;
     padding: 8px 16px;
@@ -287,8 +285,7 @@ Carousel Container
 ****************************************************************************/
 
 .carousel-item {
-    padding-top: 50px;
-    height: 400px;
+     height: 400px;
 }
 
 .carousel-item img {
