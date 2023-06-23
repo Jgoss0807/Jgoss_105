@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Forms Basics</title>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Let's look at some forms</h1>
+        <form>
+            <fieldset>
+                <legend>Text-related Form elements</legend>
+
+                <h2>Text Input</h2>
+                <h4>Each input should have a unique 'name' attribute</h4>
+                <p>What is your name?</p>
+
+                <p>* indicates required fields</p>
+
+                <div class="text_input">
+                    <label for="first_name_id">First Name  
+                    *:</label>
+                    <input
+                    required
+                    id="first_name_id"
+                    name="first_name"
+                    type="text"
+                    minlength="2"
+                    maxlength="15">
+                </div>
+                <div class="text_input">
+                    <label for="last_name_id">Last Name:</label>
+                    <input type="text" id="last_name_id"
+                    name="last_name">
+                </div>
+                <div class="text_input">
+                    <label for="email_id">Email:</label>
+                    <input type="email" id="email_id" name="email">
+                </div>
+                <div class="text_input">
+                    <label for="password_id">Password:</label>
+                    <input type="password" id="password_id"
+                    name="password">
+                </div>
+
+                <h2>Textarea Input</h2>
+                <h4>Each textarea should also have a unique 'name' attribute</h4>
+                
+                <div class="text_input">
+                    <label for="code_feeling-id">How do you feel about programming?</label>
+                    <textarea
+                    id="code_feeling-id"
+                    name="code_feeling-id"
+                    placeholder="This is the deault text for a text area"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Option-related Form Elements</legend>
+                <h2>Checkbox Input</h2>
+                <h4>
+                     All checkbox inputs should have unique (but similar) 'name' attributes and different 'value' attributes
+                </h4>
+                <p>How do you get to class?</p>
+                <div>
+                    <input type="checkbox" id="bike_checkbox"
+                    name="vehicle_1" value="bike">
+                    <label for="bike_checkbox">Bike</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bus_checkbox"
+                    name="vehicle_2" vaule="bus">
+                    <label for="bus_checkbox">Bus</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="car_checkbox"
+                    name="vehicle_3" value="car">
+                    <label for="car_checkbox">Car</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bed_checkbox"
+                    name="vehicle_4" value="bed">
+                    <label for="bed_checkbox">I roll out of bed and opem my laptop</label>
+                </div>
+
+                <h2>Radio Input</h2>
+                <h4>
+                    All radio inputs of the same group should have the SAME 'name' attributes, but different 'value' attributes
+                </h4>
+                <p>What program are you in?</p>
+
+                <div>
+                    <input type="radio" id="rasp_radio"
+                    name="program" value="rasp" required>
+                    <label for="rasp_radio">Recording Arts and Show Production</label>
+                </div>
+                <div>
+                    <input type="radio" id="dfvp_radio"
+                    name="program" value="dfvp" required>
+                    <label for="dfvp_radio">Digital Filmaking and Video Production</label>
+                </div>
+                <div>
+                    <input type="radio" id="gdwd_radio"
+                    name="program" value="gdwd" required>
+                    <label for="gdwd_radio">Graphics Design and Web Development</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Buttons-related Form Elements</legend>
+                <h2>Button Inputs</h2>
+                <h4>
+                     A button input does not need a 'name' attribute,but to change the text inside the button,you will need to use the 'value' attribute.
+                </h4>
+
+                <div>
+                    <input type="button" value="Normal Button">
+                    <input type="reset" value="Click me to reset everything">
+                    <input type="submit" value="Submit everything">
+                </div>
+            </fieldset>
+        </form>
+</body>
+</html>
