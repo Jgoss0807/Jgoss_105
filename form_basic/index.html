@@ -8,21 +8,62 @@
         <link href="css/main.css" rel="stylesheet">
     </head>
     <body>
-        <p>What is yout name?</p>
-        <div class="text_input">
-            <label for="first_name_id">First Name:</label>
-            <input type="first_name_id" id="first_name_id" name="first_name">
-        </div>
-        
-        <div class="text_input">
-            <label for="middle_name_id">Middle Name:</label>
-            <input type="middle_name_id" id="middle_name_id" name="middle_name">
-        </div>
-        <div class="text_input">
-            <label for="last_name_id">Last Name:</label>
-            <input type="last_name_id" id="last_name_id" name="last_name">
-        </div>
+       
+         <legend>
+            <h2>Check out whats coming this month</h2> 
+            <h4>Want Genres You Into?</h4>
+            
+            <div class="text_input">
+                   <label for="action_id">Action</label>
+                    <input required id="action_id" name="action_id" type="text" minlength="2" maxlength="15">
+            </div>
+            <br>
+            <div class="text_input">
+                <label for="drame_id">Drama</label>
+                <input required id="drama_id" name="drama_id" type="text" minlength="2" maxlength="15">
+            </div>
+            <br>
+            <div class="text_input">
+                    <label for="comedy_id">Comedy</label>
+                    <input required id="comedy_id" name="comedy_id" type="text" minlength="2" maxlength="15">
+            </div>
+            <br>
+            <div>
+                    <label for="greatest_group">
+                        What is your favorite anime of all time?
+                    </label>
+                    <select id="greatest_group_id name=greatest_group">
+                        <option value=""disabled selected>Please choose</option>
+                        <option value="dragonball">Dragonball</option>
+                        <options value="naurto">Naurto</options>
+                        <options value="bleach">Bleach</options>
+                        <options value="one_piece">One Piece</options>
+                        <options value="hunterxhunter">HunterxHunter</options>
+                    </select>
+                </div>
 
-        
-    </body>
+            <div>
+             <br>
+                <legend>What Would You Like To Stream?</legend>
+                <input type="radio" id="rasp_radio"
+                name="current_season" value="rasp" required>
+                <label for="rasp_radio">Current Season</label>
+            </div>
+    
+            <div>
+               <input type="radio" id="dfvp_radio"
+                name="all_titles " value="dfvp" required>
+                <label for="dfvp_radio">All Titles</label>
+            </div>
+            <div>
+                <input type="radio" id="gdwd_radio"
+                name="schedule" value="gdwd" required>
+                <label for="gdwd_radio">Schedule</label>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+       </legend>
+</body>
 </html>
