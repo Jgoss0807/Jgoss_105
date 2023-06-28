@@ -16,24 +16,26 @@
     <main>
         <form action="https://getform.io/f/58a94393-3c30-4e26-8f6f-467364d786d1" method="POST">
             <div>
-                <label for="services_id">What can we help
-                you with?</label>
-                <select id="services_id"
-                name="services_selection">
-                    <option id="default_option"
-                    value="none" diable selected>select what we can help you with</option>
-                    <option value="gardedning">gardedning</option>
+                <label for="services_id">What can we help you with?</label>
+                <select id="services_id" name="service_selection" required>
+                    <option id="default_option" value="" disabled selected>
+                        Select what we can help you with
+                    </option>
+                    <option value="gardening">Gardening</option>
                     <option value="coding">Coding</option>
                     <option value="web dev">Web Development</option>
                 </select>
-                <div>
+            </div>
+            <div>
                     <label for="name_id">Name</label>
                     <input
                     type="text"
                     id="name_id"
                     name="name"
                     required
-                    placeholder="E.g. John Smith">
+                    placeholder="E.g. John Smith"
+                    minlength="10"
+                    max="20">
                 </div>
                 <div>
                     <label for="email_id">Email</label>
@@ -42,14 +44,19 @@
                         id="email_id"
                         name="email"
                         required
-                        placeholder="E.g. jane.doe@gmail.com">
+                        placeholder="E.g. jane.doe@gmail.com"
+                        min="10"
+                        maxlength="50">
                 </div>
                 <div>
                     <label for="message_id">Message</label>
                     <textarea
                         id="message_id"
                         name="message"
-                        placeholder="I would like you to ..."></textarea>
+                        required
+                        placeholder="I would like you to ..."
+                        minlength="50"
+                        maxlength="100"></textarea>
                 </div>
                 <div>
                     <input type="submit" value="Send">
