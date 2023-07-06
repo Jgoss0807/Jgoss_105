@@ -1,0 +1,42 @@
+header  {
+    background-color: lightskyblue;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 24px;
+    padding: 24px;
+}
+ aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgrey;
+ }
+
+ p {
+    text-align: center ;
+ }
+
+ h2{
+    text-align: center;
+ }
+
+ h3{
+    text-align: center;
+ }
+
+
+form{
+   margin: 0 auto;
+   width: 200px;
+}
+
