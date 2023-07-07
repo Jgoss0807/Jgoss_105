@@ -24,6 +24,7 @@ nav ul li {
     position: fixed;
     font-style: italic;
     background-color: lightgrey;
+    top: 140px;
  }
 
  p, h2, h3{
@@ -43,7 +44,39 @@ html{
     min-height: 100vh;
 }
 
-footer{
-    position:absolute;
-    bottom:0;
+#three_cards,
+#two_cards {
+    display: flex;
 }
+
+.card {
+    border: 2px solid blue;
+    color: black;
+    margin: 48px 24px 24px;
+    padding: 12px 12px 24px;
+    text-align: center;
+    box-shadow: 4px 4px 8px 0 grey;
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    background-color: lightgrey;
+}
+
+.card p {
+    font-size: 18px;
+    flex: 1;
+    margin-top: 0px;
+}
+
+
+
+footer{
+    bottom:0;
+    width: 100vw;
+    background-color: lightgray;
+    padding: 12px;
+    left: 0px;
+    border-style: solid;
+    border-width: 3px;
+}
+
