@@ -1,236 +1,123 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #040405;
-}
-
-#hero {
-    background-image: url(../images/images/hulu-bg.jpeg);
+.top_section{
+    position: relative;
+    background-image: url(../images/hulu-bg.jpeg);
     background-size: cover;
-}
-
-nav {
-    padding: 24px 36px;
-    background: linear-gradient(to bottom, #000000DD, #00000000);
-}
-
-nav img {
-    width: 60px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-}
-
-nav a {
-    display: inline-block;
+    height: 100vh;
+    background-position: no repeat;
     color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 8px;
-    transition: background-color 0.5s;
-}
-nav a:hover {
-    background-color: rgb(93, 92, 92);
 }
 
-#hero_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.top_section .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:  10rem;
+    width: 100%;
+    display: grid; align-items: center;
+    justify-content: end;
 }
 
-h5 {
-    color: #00ed82;
+.login_link{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-right: 2rem;
 }
 
-#hero_content p {
-    color: white;
-    font-size: 22px;
+.top_section .bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25rem;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 2rem;
+    background-color: linear-gradient(
+        179.81deg,
+        rgba(4,4,4,0.7)0.17%,
+        rgba(4,4,4,0.45)85.02%,
+        rgba(4,4,4,0.3%)112.52%
+    );
     text-align: center;
-    margin-bottom: 25px;
-}
-#hero_content img {
-    margin: 25px 0;
 }
 
-.btn-link {
-    display: inline-block;
-    background-color: #00ed82;
-    color: black;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 14px;
-    padding: 16px;
-    border-radius: 6px;
-    width: 670px;
-    text-align: center;
-    transition: opacity 0.5s;
-}
-.btn-link:hover {
-    opacity: 0.5;
+
+.top_section .logo {
+    height: 3rem;
 }
 
-.small-link, .medium_link {
+.top_section .title {
+    color: green;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 3;
+}
+
+.top_section .title .descritpion{
     display: inline-block;
+    padding: 1.5rem 3rem;
     color: white;
+    text-transform: uppercase;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
-.small-link {
-    font-size: 14px;
-    margin-top: 16px;
+.top_section .middle {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15vh;
+    margin: 0 auto;
+    max-width: 80rem;
 }
 
-.medium_link {
-    margin-top: 28px;
+.middle_banner {
+    padding: 0 2rem;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    padding: 12px 36px;
-    margin-top: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-footer #footer_image_container {
-    width: 250px;
-}
-
-footer img {
+.middle-banner img {
+    height: 100%;
     width: 100%;
 }
 
-.clear_button_link {
-    display: inline-block;
+.top_section .middle .subtitle {
+    margin-top: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.bundle_button {
+    background-color: green;
     color: black;
-    background-color: #00ed82;
-    font-weight: bolder;
-    text-decoration: none;
-    border-radius: 4px;
-    padding: 12px 24px;
-    transition: opacity 0.5s;
-}
-.clear_button_link:hover {
-    opacity: 0.5;
-}
-
-.tiny_link {
-    display: block;
-    color: white;
-    font-size: 10px;
-    text-align: center;
-    margin-top: 4px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    margin: 2.5rem 0;
+    margin-left: 40%;
+    width: 80%;
+    max-width: 30rem;
+    height: 5rem;
 }
 
-#footer_center {
-    margin: 0 24px;
-    flex: 1;
-}
-
-#footer_center p {
-    color: white;
-    font-size: 22px;
-}
-
-#cards_section {
-    text-align: center;
-    margin-top: 90px;
-}
-
-#cards_section h2, #cards_section p, #cards_section h6, #cards_section h4 {
-    color: white;
-}
-
-#cards_section h2 {
-    font-size: 48px;
-    margin: 10px auto 30px auto;
-}
-#cards_section p {
-    width: 700px;
-    margin: 0 auto;
-}
-
-#cards_container {
+.parent{
     display: grid;
-    grid-template-columns: repeat(4, 295px);
-    grid-auto-rows: 450px;
-    gap: 24px;
-    width: 1252px;
-    margin: 60px auto;
-    text-align: left;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
 }
 
-#cards_container div {
-    padding-left: 24px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    border: 4px solid #040405;
-    outline: 4px solid transparent;
-    transition:
-    outline 0.5s,
-    opacity 0.5s;
-}
-#cards_container div:hover {
-    outline-color: grey;
-    opacity: 0.6;
+.container{
+    display: flex;
 }
 
-#cards_container h6 {
-    font-weight: normal;
-    margin-bottom: 25px;
-}
-
-#cards_container h4 {
-    font-size: 22px;
-}
-
-#bobs_burgers {
-    background-image: url(../images/images/bobsburgers.jpeg);
-}
-#prey {
-    background-image: url(../images/images/prey.jpeg);
-}
-#handmaids_tale {
-    background-image: url(../images/images/handmaidstale.jpeg);
-}
-#dragon {
-    background-image: url(../images/images/houseofdragon.jpeg);
-}
-
-@media screen and (max-width: 768px) {
-    .btn-link {
-        width: 80%;
-    }
-    footer {
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 36px;
-        row-gap: 24px;
-    }
-    #cards_section {
-        padding: 0 24px;
-    }
-    #cards_section p {
-        width: 100%;
-    }
-    #cards_container {
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-    }
-    #cards_container div {
-        background-repeat: no-repeat;
-    }
-    #cards_container h4 {
-        font-weight: normal;
-    }
+.title_2{
+    color: green;
 }
